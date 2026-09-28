@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Blessings Sakala</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+    <p>ICT251 Web Technologies - Blessings Sakala</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning">Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.w3schools.com/" target="_blank">Learn Web Dev</a>
+  </nav>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Me</h2><img src="images/photo1.jpg" alt="Me working on my laptop in the library">
+      <p>This is my new corrected caption</p>
+        Hello, my name is Blessings Sakala and I am a Computer Science student at Mulungushi University. 
+        I am passionate about technology and problem solving. I joined ICT251 to build a strong foundation 
+        in web development. In the future I hope to create websites and applications that help people in 
+        Zambia access information easily. I enjoy learning new tools, working in teams, and turning ideas 
+        into real projects. This website is part of my journey to become a skilled web developer.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <h2>My Hobbies</h2>
+<img src="images/photo2.jpg" alt="my baking setup">
+<p>My little helper in the kitchen 👨‍🍳</p>
+<ul>
+  <li>Coding small projects</li>
+  <li>Baking cakes</li>
+  <li>Listening to music</li>
+</ul>
+    </section>
+
+    <section id="learning" class="content-section">
+      <h2>My Learning Plan</h2><img src="images/photo3.jpg" alt="Me with classmates during a group project">
+      <ol>
+        <li>Complete HTML and CSS fundamentals and build 3 practice pages</li>
+        <li>Learn JavaScript basics and make my website interactive</li>
+        <li>Build a full project using HTML, CSS and JavaScript and host it on GitHub</li>
+      </ol>
+
+      <table>
+        <caption>Weekly Web Learning Plan</caption>
+        <thead>
+          <tr><th>Day</th><th>Topic</th><th>Practice Task</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>HTML Structure</td><td>Build page layout with semantic tags</td></tr>
+          <tr><td>Wednesday</td><td>CSS Styling</td><td>Style navigation and sections</td></tr>
+          <tr><td>Friday</td><td>Forms and Media</td><td>Add contact form and video/audio</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section">
+      <h2>My Photos</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/photo1.jpg" alt="Me working on my laptop in the library">
+          <figcaption>Studying in the library</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo2.jpg" alt="My brother and i baking cakes at home">
+          <figcaption>My home coding setup</figcaption>
+        </figure>
+        <figure>
+          <img src="images/photo3.jpg" alt="Me with classmates during a group project">
+          <figcaption>Group project at MU</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+      <h3>Video Introduction</h3>
+<video width="640" height="360" controls>
+  <source src="videos/intro.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+      </video>
+      <p><strong>Summary:</strong> In this video I introduce myself as Blessings Sakala, a Computer Science student. 
+      I talk about my programme and say that I hope to learn JavaScript and responsive web design.</p>
+
+      <h3>Audio Clip</h3>
+      <audio controls>
+        <source src="voice.mp3" type="audio/mpeg">
+      </audio>
+      <p>This audio describes why I chose to study web technologies.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Me</h2>
+      <p><em>Note: This form is for demonstration only and does not send data.</em></p>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Blessings Sakala | ICT251 Web Technologies | Mulungushi University</p>
+  </footer>
+
+<section id="voice">
+  <h2>Voice Recording</h2>
+  <p>Click play to hear me explain my website:</p>
+  <audio controls>
+    <source src="voice.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+</section>
+
+</body>
+</html>
