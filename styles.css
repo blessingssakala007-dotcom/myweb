@@ -1,0 +1,599 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #fff5f8; /* very light baby pink background */
+  color: #4a4a4a;
+}
+
+h1, h2 { color: #d81b60; } /* soft dark pink headings */
+
+header { 
+  background: #d81b60; /* soft dark pink */
+  color: white; 
+  padding: 1rem; 
+  text-align: center; 
+}
+
+nav { 
+  background: #f06292; /* baby pink */
+  padding: 0.5rem; 
+  text-align: center; 
+}
+
+nav a { 
+  color: white; 
+  margin: 0 10px; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+nav a:hover, nav a:focus { 
+  text-decoration: underline; 
+  background: #c2185b; /* darker pink on hover */
+  padding: 5px; 
+  border-radius: 4px; 
+}
+
+.content-section { 
+  padding: 1rem; 
+  margin: 1rem; 
+  border: 2px solid #f8bbd0; /* soft pink border */
+  border-radius: 8px; 
+  background: white; 
+}
+
+#contact { 
+  background-color: #fce4ec; /* very soft baby pink */
+}
+
+.gallery { display: flex; gap: 1rem; flex-wrap: wrap; }
+.gallery figure { flex: 1 1 250px; text-align: center; }
+
+img, video { max-width: 100%; height: auto; border-radius: 8px; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { border: 1px solid #d81b60; padding: 8px; text-align: left; } /* soft pink border */
+caption { font-weight: bold; margin-bottom: 0.5rem; }
+
+form { display: flex; flex-direction: column; gap: 0.8rem; }
+input, textarea, button { padding: 0.6rem; border: 1px solid #f8bbd0; border-radius: 4px; }
+
+button { 
+  background: #d81b60; /* soft dark pink */
+  color: white; 
+  cursor: pointer; 
+}
+
+button:hover { 
+  background: #f06292; /* baby pink on hover */
+}
+
+footer { 
+  text-align: center; 
+  padding: 1rem; 
+  background: #d81b60; /* soft dark pink */
+  color: white; 
+  margin-top: 2rem; 
+}
+/* =================================
+   1. GENERAL WEBSITE STYLING
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f6fc;
+    color: #292536;
+}
+
+/* =================================
+   2. HEADER AND INTRODUCTION
+================================= */
+
+header {
+    background-color: #4b367c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* =================================
+   3. NAVIGATION
+================================= */
+
+nav {
+    background-color: #332451;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    display: inline-block;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #7255a6;
+    text-decoration: underline;
+}
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #e5a93d;
+    outline-offset: 3px;
+}
+
+/* =================================
+   4. MAIN CONTENT AND SECTIONS
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 1px solid #e4deef;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #4b367c;
+    border-bottom: 2px solid #d8c8f0;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+/* =================================
+   5. INTRODUCTION BUTTONS
+================================= */
+
+.button,
+header a {
+    display: inline-block;
+    background-color: #7255a6;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover,
+header a:hover {
+    background-color: #332451;
+}
+
+/* =================================
+   6. PHOTOGRAPHS AND GALLERY
+================================= */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    padding: 8px;
+    color: #514765;
+}
+
+/* Gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+/* =================================
+   7. VIDEO AND AUDIO
+================================= */
+
+video,
+audio {
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* =================================
+   8. LEARNING TABLE
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #d8c8f0;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4b367c;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f3eff9;
+}
+
+/* =================================
+   9. CONTACT FORM
+================================= */
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8adc9;
+    border-radius: 5px;
+    font: inherit;
+    background-color: white;
+    color: #292536;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+button,
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #4b367c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #332451;
+}
+
+/* =================================
+   10. PROJECTS AND SKILLS
+================================= */
+
+.project-card,
+.skill-card {
+    background-color: #f3eff9;
+    border: 1px solid #d8c8f0;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.project-card h3,
+.skill-card h3 {
+    color: #4b367c;
+}
+
+/* =================================
+   11. JAVASCRIPT FEEDBACK
+================================= */
+
+.feedback,
+.form-feedback,
+#formPreview {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#formPreview {
+    background-color: #e9f7ec;
+    border: 1px solid #8ac49a;
+    color: #204c2b;
+}
+
+/* =================================
+   12. FOOTER
+================================= */
+
+footer {
+    background-color: #332451;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #f2d9ff;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* =================================
+   13. RESPONSIVE DESIGN
+================================= */
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    button,
+    input[type="submit"] {
+        max-width: 100%;
+    }
+}
+
+/* Make all images fit their containers */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Style image captions */
+figure {
+    margin: 15px 0;
+}
+
+figcaption {
+    text-align: center;
+    padding: 8px;
+    line-height: 1.5;
+}
+/* Make videos fit the available screen width */
+video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Keep audio controls within their container */
+audio {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Adjust the website for tablets and smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Reduce the main content width */
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    /* Reduce section spacing */
+    section {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+
+    /* Make headings fit smaller screens */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Allow navigation links to wrap */
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Make images fit their containers */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Keep media within the screen */
+    video,
+    audio {
+        max-width: 100%;
+    }
+
+    /* Improve table readability */
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* Adjust the website for narrow mobile screens */
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    main {
+        width: 96%;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    header {
+        padding: 25px 12px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Stack navigation links vertically */
+    nav a {
+        display: block;
+        margin: 5px auto;
+    }
+
+    /* Keep form controls within the screen */
+    input,
+    textarea,
+    select,
+    button {
+        max-width: 100%;
+    }
+}
+
+/* Dark theme for the personal website */
+body.dark-theme {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+body.dark-theme section {
+    background-color: #303030;
+    color: #f5f5f5;
+}
+
+body.dark-theme a {
+    color: #8ecbff;
+}
+
+body.dark-theme input,
+body.dark-theme textarea,
+body.dark-theme select {
+    background-color: #222222;
+    color: #ffffff;
+    border: 1px solid #aaaaaa;
+}
+
+body.dark-theme button {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #aaaaaa;
+}
+
+body.dark-theme button:hover {
+    background-color: #555555;
+}
